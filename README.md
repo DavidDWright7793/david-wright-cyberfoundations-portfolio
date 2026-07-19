@@ -1,1 +1,1 @@
-I am David Wright, and I am making a career transition into IT/cybersecurity. I am a member of the CyberVisionaries CyberFoundations cohort, and this repo is my portfolio for the class where I showcase my work, what I am building, and what I am learning.
+I am David Wright, and I am making a career transition into IT/cybersecurity. I am a member of the CyberVisionaries CyberFoundations cohort, which began on July 13, 2026 and will run for 12 weeks. This repo is my portfolio for the class where I will showcase my work, what I am building, and what I am learning.
