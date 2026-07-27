@@ -91,7 +91,7 @@ The process list updates constantly and can be hard to read while it's jumping a
 Look at the current CPU usage percentage.
 
 ```
-Current CPU usage: ____%
+Current CPU usage: 11%
 ```
 
 ### Step 5 — Record Memory Usage
@@ -99,7 +99,7 @@ Current CPU usage: ____%
 Find how much RAM is currently in use, out of your total installed RAM (the same total you looked up in Part A).
 
 ```
-RAM in use: ____   out of total: ____
+RAM in use: 15.4 GB  out of total: 32.0 GB
 ```
 
 ### Step 6 — List Five Running Processes
@@ -121,11 +121,11 @@ List five processes running right now. For each, write your best guess at what i
 | launchd | Mac | The very first process Mac starts — manages and launches other background services |
 
 ```
-1. Process name: __________   What I think it does: __________
-2. Process name: __________   What I think it does: __________
-3. Process name: __________   What I think it does: __________
-4. Process name: __________   What I think it does: __________
-5. Process name: __________   What I think it does: __________
+1. Process name: Google Chrome   What I think it does: Web browser/search engine
+2. Process name: Task Manager  What I think it does: Monitors and manages OS tasks
+3. Process name: Copilot   What I think it does: Generative AI assistant
+4. Process name: Windows Explorer   What I think it does: file manager
+5. Process name: iTunes  What I think it does: Music/audio player
 ```
 
 ### Step 7 — Screenshot and Embed
