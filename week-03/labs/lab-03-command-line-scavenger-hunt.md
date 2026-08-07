@@ -99,7 +99,7 @@ Create a new folder called `sorted-findings` in your home directory.
 Command you ran:
 
 ```
-PS /home/archivist> New-Item sorted-findings -ItemType Directory
+mkdir sorted-findings
 ```
 
 ### Step 2 — Move All Three Files Into It
@@ -109,9 +109,9 @@ Move the shift log, maintenance note, and supply inventory files — the same th
 Commands you ran:
 
 ```
-Move-Item operations/ops-log/shift-log.txt sorted-findings/
-Move-Item records/records-2025/maintenance-note.txt sorted-findings/
-Move-Item records/records-2024/supply-inventory.txt sorted-findings/
+mv operations/ops-log/shift-log.txt sorted-findings/
+mv records/records-2025/maintenance-note.txt sorted-findings/
+mv records/records-2024/supply-inventory.txt sorted-findings/
 ```
 
 ### Step 3 — Confirm the Move
@@ -121,16 +121,13 @@ List the contents of `sorted-findings` to confirm all three files are now there.
 Command you ran:
 
 ```
-cd-sorted findings
-ls
+ls sorted-findings
 ```
 
 Output:
 
 ```
-Mode                 Name
--a----               maintenance-note.txt
--a----               shift-log.txt
+maintenance-note.txt  shift-log.txt  supply-inventory.txt
 ```
 
 ---
@@ -146,13 +143,13 @@ When that happens, use `--help`, `man`, or `Get-Help` instead of guessing. Recor
 Command or term you looked up:
 
 ```
-Get-Acl
+chmod
 ```
 
 What the help text (or the folder's contents) told you:
 
 ```
-The command 'Get-Acl' shows who owns a file and what permissions it has.
+The command 'chmod' changes the permissions (read, write, execute) on the file for the owner, groups, and users.
 ```
 
 ### Step 2 — Describe a Wrong Turn
