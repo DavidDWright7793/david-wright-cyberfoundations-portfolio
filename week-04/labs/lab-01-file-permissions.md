@@ -256,6 +256,8 @@ This lab's written answers are submitted through the **CyberFoundations Lab Port
 5. Right-click directly on the image and choose **Copy image address** (Chrome/Edge) or **Copy Image Link** (Firefox).
 6. Edit this lab file and paste your copied link into the embed below, at the end of Part B:
 
+![Permissions audit — final ls -l](https://raw.githubusercontent.com/DavidDWright7793/david-wright-cyberfoundations-portfolio/main/assets/screenshots/cli-permissions-audit.png)
+
 **If right-click doesn't show that option** (e.g., on some trackpads or tablets): click the small download-arrow icon in the top-right of the image preview instead, then copy the URL from your browser's address bar.
 
 ---
