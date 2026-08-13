@@ -88,6 +88,8 @@ Your size tier, its specs, and its hourly rate:
 B2s
 2 vCPUs · 4 GB RAM · 64 GB disk
 $0.046/hr
+
+I would not leave this machine running for a month, as I would not want to pay $33.12/month for a VM that I would likely use for only a few hours in the month. If I stopped it between sessions of use, the monthly fee would be much lower, which would help keep overall costs down.
 ```
 
 Your monthly math (rate × 24 × 30):
@@ -164,7 +166,7 @@ Start the VM and confirm the full rate resumes. One sentence: where did your fil
 Your one-sentence answer:
 
 ```
-When my VM was stopped, my files went into storage.
+When my VM was stopped, my files stayed on the virtual disk-they didn't go anywhere. That's why the $0.002/hour charge continues while the VM is stopped-even though it is not running, it is still storing files.
 ```
 
 ### Step 3 — Take a Snapshot
@@ -174,7 +176,7 @@ Take a snapshot and record its name from the snapshot list. One sentence: what e
 Snapshot name and your one-sentence explanation:
 
 ```
-The snapshot's name is 'snapshot-1'.
+The snapshot's name is 'snapshot-1'. It is a complete copy of the VM's disk in that moment, and I would be glad (and relieved) to have it the moment a configuration change breaks something and I would need to get it back to a state that I know worked.
 ```
 
 ### Step 4 — Capture Screenshot 2 (REQUIRED — Deliverable 1)
