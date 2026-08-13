@@ -158,7 +158,7 @@ grep -i badge-code *.txt
 The file you found:
 
 ```
-meetng-recap.txt
+meeting-recap.txt
 ```
 
 ### Step 2 — Check Who Can Touch It
