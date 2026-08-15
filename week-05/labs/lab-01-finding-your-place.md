@@ -1,8 +1,8 @@
 # Week 5 Lab 01 — Finding Your Place on the Grid (CLI Simulator)
 
-**Student Name:**
+**Student Name:** David Wright
 
-**Date Completed:**
+**Date Completed:** 8/15/2026
 
 **Module:** 2 — Networking & Cloud Foundations | **Week:** 5  
 **Submission Path:** `week-05/labs/lab-01-finding-your-place.md`
