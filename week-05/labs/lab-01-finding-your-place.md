@@ -164,7 +164,7 @@ How many packets you sent, how many came back, and the typical round-trip time:
 ```
 Packets transmitted: 4
 Packets received: 4
-Time: 3005ms
+Average Time (RTT): 1.150ms
 ```
 
 ### Step 3 — Ping a Machine by Name
@@ -200,7 +200,7 @@ The number ping showed for `foundry-archive.grid.local`, and its packet loss and
 ```
 IP Address: 10.20.5.20
 Packet Loss: 0%
-Latency: 3005ms
+Average Time (RTT): 2.150ms
 ```
 
 ---
