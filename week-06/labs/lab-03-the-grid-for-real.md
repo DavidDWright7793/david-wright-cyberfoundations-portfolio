@@ -2,7 +2,7 @@
 
 **Student Name:** David Wright
 
-**Date Completed:** 9/2/2026
+**Date Completed:** 9/3/2026
 
 **Module:** 2 — Networking & Cloud Foundations | **Week:** 6  
 **Submission Path:** `week-06/labs/lab-03-the-grid-for-real.md`
@@ -328,25 +328,25 @@ If I could control what is allowed to reach my VM, I would utilize the concept o
 
 ## Submission Checklist
 
-- [ ] `ip addr` output recorded and own private IP/prefix identified (Part A)
+- [x] `ip addr` output recorded and own private IP/prefix identified (Part A)
 
-- [ ] `ip route` output recorded and default gateway identified (Part A)
+- [x] `ip route` output recorded and default gateway identified (Part A)
 
-- [ ] Live output compared to the Week 5 simulator (Part A, Step 3)
+- [x] Live output compared to the Week 5 simulator (Part A, Step 3)
 
-- [ ] Gateway pinged and the silent result interpreted correctly (Part B)
+- [x] Gateway pinged and the silent result interpreted correctly (Part B)
 
-- [ ] Beacon `ping`, `traceroute`, and `curl` all run and recorded (Part C)
+- [x] Beacon `ping`, `traceroute`, and `curl` all run and recorded (Part C)
 
-- [ ] Beacon banner and TRACE ID recorded (Part C, Step 4)
+- [x] Beacon banner and TRACE ID recorded (Part C, Step 4)
 
-- [ ] `vm-toolkit-live.png` and `beacon-reply.png` captured, cropped, uploaded to `assets/screenshots/week-06/` (Part C, Step 5)
+- [x] `vm-toolkit-live.png` and `beacon-reply.png` captured, cropped, uploaded to `assets/screenshots/week-06/` (Part C, Step 5)
 
-- [ ] Ladder Rule rewritten with route evidence + known-good target (Part D)
+- [x] Ladder Rule rewritten with route evidence + known-good target (Part D)
 
-- [ ] All four Analysis Questions answered (minimum sentence counts met)
+- [x] All four Analysis Questions answered (minimum sentence counts met)
 
-- [ ] This file is committed to your portfolio repo at `week-06/labs/lab-03-the-grid-for-real.md`
+- [x] This file is committed to your portfolio repo at `week-06/labs/lab-03-the-grid-for-real.md`
 
 ---
 
