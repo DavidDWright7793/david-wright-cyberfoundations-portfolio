@@ -34,13 +34,13 @@ This course is very solid and practical, as it starts with the basics (hardware,
 
 ## Professional Growth Check
 
-- [ ] I documented my reflection clearly and in my own words
+- [x] I documented my reflection clearly and in my own words
 
-- [ ] I used structured formatting in my submission
+- [x] I used structured formatting in my submission
 
-- [ ] My commit message was meaningful and descriptive
+- [x] My commit message was meaningful and descriptive
 
-- [ ] I checked that I did not include my Bastion shareable URL or Cloud Heights password in my reflection
+- [x] I checked that I did not include my Bastion shareable URL or Cloud Heights password in my reflection
 
 ---
 
