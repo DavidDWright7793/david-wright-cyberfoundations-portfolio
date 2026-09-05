@@ -55,7 +55,7 @@ You used these commands on a real Ubuntu machine this week. Instead of memorizin
 | `whoami` | Which account am I currently logged into? |
 | `pwd` | Which directory am I currently in? |
 | `ip addr` | Which IP address is assigned to the machine I am currently on? |
-| `ip route` | Shows routing table from your machine to your desired destination |
+| `ip route` | Where does this machine send traffic that isn't local to this subnet? |
 | `ping` | Checks to see if your desired destination responds |
 | `traceroute` | Traces the path from your machine to your desired destination |
 | `dig` | Tests a destination by name |
