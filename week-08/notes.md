@@ -19,11 +19,11 @@
 
 | Command | What it demonstrated |
 | --- | --- |
-| `openssl enc`: creating a passphrase
-| `sha256sum`: hashing a file
-| `ssh-keygen`: generating a key pair
-| `openssl dgst': signing an original report
-| `ssh ... -o PasswordAuthentication=no': running public-key-only proof
+| `openssl enc` | creating a passphrase
+| `sha256sum` | hashing a file
+| `ssh-keygen` | generating a key pair
+| `openssl dgst' | signing an original report
+| `ssh ... -o PasswordAuthentication=no' | running public-key-only proof
 
 ## Safety Rules I Must Remember
 
