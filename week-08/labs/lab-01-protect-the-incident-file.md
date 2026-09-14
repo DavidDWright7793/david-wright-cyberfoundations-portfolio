@@ -56,7 +56,7 @@ Return to **My Lab Environment** in the Lab Portal and start your assigned VM. A
 **[WORKSHEET]** What do you expect to see when encrypted data is inspected as bytes? Why should it not look like the original report?
 
 ```text
-Encrypted data should not look like the original report because it is scrambled in order to be unreadable without the correct decryption key. It would look like unreadable gibberish when inspected.
+Encrypted data should not look like the original report because it is scrambled in order to be unreadable without the correct decryption key. It should look like unreadable gibberish when inspected.
 ```
 
 ## Guided Steps
