@@ -2,7 +2,7 @@
 
 **Student Name:** David Wright
 
-**Date Completed:** 9/4/2026
+**Date Completed:** 9/28/2026
 
 **Module:** 2 — Networking & Cloud Foundations | **Week:** 6  
 **Submission Path:** `week-06/labs/lab-05-layer-detective.md`
@@ -102,13 +102,13 @@ If a machine does not have a usable IP address, then you can't even establish it
 Layer:
 
 ```
-Layer 5
+Layer 4
 ```
 
 Evidence that the layers below were working:
 
 ```
-Since a 'ping' to the server succeeded but a 'curl' to the server did not, it proved that Layers 1 and 2 were working properly. The machine has a valid IP address on the network (Layer 1), and a valid path to the server exists (Layer 2). Layers 3 and 4 are not relevant to this issue.
+Since a ping to the server was successful, this indicates that Layers 1-3 are functioning sufficiently for the machine to reach the server-the machine has network connectivity, a valid IP configuration, and a working path to the server. When the curl connection returned nothing useful, this indicates that the problem occurs at or above Layer 4.
 ```
 
 ### Case File 5 — Wrong Neighbourhood
@@ -118,13 +118,13 @@ A machine has an address, but its default route points somewhere that cannot for
 Layer:
 
 ```
-Layer 2
+Layer 3
 ```
 
 Evidence and reasoning:
 
 ```
-If a machine has a valid IP address but a default route that points somewhere that cannot forward its traffic, there is a failure at Layer 2. Having a valid IP address on the network clears Layer 1, but if it does not have a default route that gives it a way out, Layer 2 has failed.
+If a machine has a valid IP address, a failure at Layer 1 or Layer 2 is not indicated. The failure is indicated at Layer 3 because the machine's default route points to a gateway that cannot forward its traffic toward its intended destination.
 ```
 
 ---
