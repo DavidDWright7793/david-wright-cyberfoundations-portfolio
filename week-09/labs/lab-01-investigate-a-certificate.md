@@ -122,6 +122,8 @@ You do not need to explain how the algorithms work. In the last column below, ex
 
 Copy the matching SAN entry fully. If other names are listed, say “additional names listed.” Keep the website’s public-key information separate from the method used to sign its certificate.
 
+**Capture now (Step 2):** With the public leaf certificate fields expanded, save `week09-lab01-certificate-fields.png` on your computer. Keep one readable overview screenshot and exclude accounts and address bars. Required certificate details may be spread between the observation table and this overview screenshot; every field does not need to fit in one image. Copy actual values into the table. Additional numbered images are optional for smaller screens or larger text; do not shrink text.
+
 **If you cannot find a field:** write “not observed” and ask your instructor. If you have confirmed that the full certificate has no EKU field, write “extension not present.” Not seeing a label in a limited viewer does not prove it is missing from the certificate.
 
 ### Step 3 - Check the Website Name and Dates
@@ -157,21 +159,23 @@ Record only what your browser shows. The browser may add a root from its own sto
 
 | Position / role | Subject | Issuer | Where observed | What remains unknown? |
 | --- | --- | --- | --- | --- |
-| Leaf / website | example.com | SSL.com | Certificate Hierarchy | Private Key |
-| Intermediate, if shown | Clloudflare TSL Issuing ECC CA 3 | SSL.com | Certificate Hierarchy | Private Key |
-| Additional intermediate, if shown | SSL.com TLS Transit ECC CA R2 | SSL.com | Certificate Hierarchy | Private Key |
-| Root / trust anchor, if shown | SSL.com TLS ECC Root CA  2022 | SSL.com | Certificate Hierarchy | Private Key |
+| Leaf / website | example.com | Cloudflare TSL Issuing ECC CA 3 | Certificate Hierarchy | Private Key |
+| Intermediate, if shown | Cloudflare TSL Issuing ECC CA 3 | SSL.com TLS Transit ECC CA R2 | Certificate Hierarchy | Private Key |
+| Additional intermediate, if shown | SSL.com TLS Transit ECC CA R2 | SSL.com TLS ECC Root CA  2022 | Certificate Hierarchy | Private Key |
+| Root / trust anchor, if shown | SSL.com TLS ECC Root CA  2022 | SSL.com TLS ECC Root CA  2022 | Certificate Hierarchy | Private Key |
+
+**Capture now (Step 4):** With the observed chain/hierarchy visible, save `week09-lab01-chain-view.png` on your computer. Show the leaf and only issuing offices actually displayed. An additional chain map is optional.
 
 Remove unused intermediate rows or mark them “not shown.” Do not invent a three-certificate chain. If the viewer exposes only the leaf, report that limit and ask the instructor for a supported viewer demonstration.
 
 Make a simple labeled chain sketch, or write the relationship in words:
 
 ```text
-The website leaf is signed by: Cloudflare TSL
-That issuer is signed by (if shown): SSL.com
-The top office (root / trust anchor) shown by my browser is (or not observed): SSL.com
+The website leaf is signed by: Cloudflare TSL Issuing ECC CA 3
+That issuer is signed by (if shown): SSL.com TLS Transit ECC CA R2
+The top office (root / trust anchor) shown by my browser is (or not observed): SSL.com TLS ECC Root CA  2022
 Why an office signing its own badge is not enough (who must choose to accept that office?): An office signing its own badge is not enough because a trusted CA needs to vouch for the office.
-This view is the browser's displayed path; I have / have not independently captured what the server sent: I have independently captured what the server sent.
+This view is the browser's displayed path; I have / have not independently captured what the server sent: I viewed the certificate chain displayed by my browser. I did not independently capture the certificates sent by the server.
 ```
 
 ## Stop & Check
@@ -188,38 +192,52 @@ Your test is to compare the name and dates, then record the browser’s result. 
 
 ## Capture Evidence
 
-Capture the expanded leaf fields and the chain/hierarchy view. Use additional numbered images when one image cannot show all fields legibly. Include captions describing what each screenshot proves. Keep account details and browser address bars outside the crop.
+Capture required images at Steps 2 and 4 while the views are visible. Keep account details and browser address bars outside the crop. The observation table plus one readable certificate overview may document the required fields. Extra field images are optional; the chain-view screenshot remains required.
+
+**Upload to your own GitHub portfolio (not the VM):** Save exact filenames on your computer and open each image to check legibility and privacy. In your connected portfolio repository open `assets/screenshots/week-09/`. If missing, from the repository root use **Add file > Create new file** named `assets/screenshots/week-09/README.md`, add a short description and **Commit changes**. Within the screenshot folder choose **Add file > Upload files**, select reviewed images from your computer and **Commit changes**. Do not upload private material or change your repository visibility.
+
+Open each committed image in GitHub in **Raw** or image view. Right-click it to **Copy image address**. Add the direct `https://` image address and caption in the matching **Screenshot Links and Captions** box. A GitHub file-view webpage (`github.com/.../blob/...`), local path or repository-relative path does not work in these boxes. A private-repository image might not preview in the portal; inspect it in your own repo rather than making it public. Previously saved valid addresses remain valid. A relative link such as `../../assets/screenshots/week-09/week09-lab01-certificate-fields.png` is only for manually edited GitHub Markdown, not a portal box.
+
+**Order:** Capture while visible, save and review, upload and commit images, add direct links and captions, finish answers, **Save Progress**, then **Submit to GitHub**. Save Progress stores portal answers. Submit to GitHub commits the worksheet Markdown and references, **not image bytes**. Inspect committed Markdown and images. If links or answers change later, Save Progress and Submit to GitHub again.
 
 ## Explain
 
 Write 3–4 sentences using the visitor-badge example. Explain one field, who signed the website’s certificate, why the browser accepts the top office, and one thing a certificate cannot promise. Sentence starters: “The SAN list is like…”, “The issuing office…”, “My browser accepts…”, and “This does not mean…”.
 
 ```text
-The SAN list is like a list of website names that the certificate covers. The issuing office is like the office that signed the cerrtificate. My browser accepts the certificate because the root CA is trusted. This does not mean that the organization running the website is automatically trustworthy.
+The SAN list is like a list of website names that the certificate covers. The issuing office is like the office that signed the certificate. My browser accepts the certificate because the root CA is trusted. This does not mean that the organization running the website is automatically trustworthy.
 ```
 
 ## Required Evidence
 
-Save screenshots in `assets/screenshots/week-09/`:
+Upload and commit the exact filenames in your own GitHub portfolio under `assets/screenshots/week-09/` (not on the VM), then add direct image addresses and captions below:
 
 - `week09-lab01-certificate-fields.png` (add `-02`, `-03` if needed)
 - `week09-lab01-chain-view.png`
 
 Complete all observation, field, name/time, and chain records in this worksheet. A chain sketch can be embedded as `week09-lab01-chain-map.png` or written in the provided fields. Browser-specific layouts and live certificate changes are acceptable when the evidence is internally consistent.
 
-### Evidence Upload - Certificate Fields (required)
+### Screenshot Links and Captions - Certificate Fields (required)
 
-**Caption - certificate fields:**
+![week09-lab01-certificate-fields.png](https://raw.githubusercontent.com/DavidDWright7793/david-wright-cyberfoundations-portfolio/refs/heads/main/assets/screenshots/week-09/week09-lab01-certificate-fields.png)
 
-### Evidence Upload - Chain View (required)
+**Caption - certificate fields:** This screenshot shows the website certificate's fields.
 
-**Caption - chain view:**
+### Screenshot Links and Captions - Chain View (required)
 
-### Optional Extra Evidence (leave blank if you do not need it)
+![week09-lab01-chain-view.png](https://raw.githubusercontent.com/DavidDWright7793/david-wright-cyberfoundations-portfolio/refs/heads/main/assets/screenshots/week-09/week09-lab01-chain-view.png)
 
-**Caption - extra certificate fields image:**
+**Caption - chain view:** This screenshot shows the certificate chain displayed by my browser.
 
-**Caption - third certificate fields image:**
+### Screenshot Links and Captions - Optional Extra Evidence (leave blank if you do not need it)
+
+![week09-lab01-certificate-fields-02.png](https://raw.githubusercontent.com/DavidDWright7793/david-wright-cyberfoundations-portfolio/refs/heads/main/assets/screenshots/week-09/week09-lab01-certificate-fields-02.png)
+
+**Caption - extra certificate fields image:** This screenshot shows an extension of the website certificate's fields from the previous screenshot
+
+![week09-lab01-certificate-fields-03.png](https://raw.githubusercontent.com/DavidDWright7793/david-wright-cyberfoundations-portfolio/refs/heads/main/assets/screenshots/week-09/week09-lab01-certificate-fields-03.png)
+
+**Caption - third certificate fields image:** This screenshot shows a further extension of the website certificate's fields from the previous two screenshots.
 
 **Caption - chain sketch image:**
 
@@ -245,6 +263,8 @@ My name, date, and browser checks tell me that the website's identity is validat
 
 ## Submission Checklist
 
+Before submitting, check both images are committed in your own GitHub portfolio and both direct image addresses and captions are present in the portal. Save Progress, Submit to GitHub, then inspect committed Markdown and images.
+
 - [x] Public hostname, observation time, time zone, and browser recorded
 
 - [x] Certificate fields completed, with unavailable fields labeled honestly
@@ -267,10 +287,10 @@ My name, date, and browser checks tell me that the website's identity is validat
 
 A **repository** is your project’s folder on GitHub. A **commit** is a saved set of changes. A `.md` file is a text document that uses simple formatting marks. Keep the headings and fill in the blank answers.
 
-1. Complete this worksheet on this page, then press **Save Progress**. Your answers are stored in the portal and reload the next time you open this lab.
-2. Press **Submit to GitHub**. The portal writes the finished worksheet to the submission path above in your connected portfolio repository. If you have not connected GitHub yet, the portal will ask you to connect and pick your repository first.
-3. Add the reviewed screenshot addresses in the evidence fields above, or upload the images under `assets/screenshots/week-09/` in your portfolio repository.
-4. Open the committed worksheet and every image on GitHub. Confirm that tables render, images are legible, and private information is absent.
-5. Keep this investigation for Portfolio Deliverable 3 and Lab 02's comparison.
+1. Capture at Steps 2 and 4 while visible; save exact filenames on your computer and review images for legibility and privacy.
+2. In your own connected GitHub portfolio, use **Add file > Upload files** in `assets/screenshots/week-09/` and **Commit changes**. Create the folder first as described above if missing.
+3. Open each committed image in Raw/image view; copy the direct image address into the corresponding portal box and add a caption. Complete your answers.
+4. Press **Save Progress** to store portal answers, then **Submit to GitHub** to commit Markdown and image references only. Connect and select your own repository if prompted.
+5. Open the committed worksheet and every image on GitHub. Confirm that tables render, images are legible, and private information is absent. If answers or links change later, Save Progress and Submit to GitHub again. Keep this investigation for Portfolio Deliverable 3 and Lab 02's comparison.
 
 *CyberVisionaries Institute · CyberFoundations · Tier I*
