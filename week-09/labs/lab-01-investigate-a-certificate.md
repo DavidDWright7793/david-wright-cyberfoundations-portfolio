@@ -2,7 +2,7 @@
 
 **Student Name:** David Wright
 
-**Date Completed:** 10/2/2026
+**Date Completed:** 10/24/2026
 
 **Module:** 3 - Practical Cryptography | **Week:** 9  
 **Submission Path:** `week-09/labs/lab-01-investigate-a-certificate.md`
