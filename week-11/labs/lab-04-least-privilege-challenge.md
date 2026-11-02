@@ -29,7 +29,7 @@ RBAC (Role-Based Access Control) is an access control model in which users recei
 
 ### Least privilege — what you removed and why
 
-The concept of least privilege is giving a user only the access needed for the approved task, scope, and duration-in other words, it provides only the access the user actually needs for the job, and nothing more. In this vein, I removed Casey's cloud account from the Privileged-Operators group (GC-PRIV), as that group's permissions were beyond what Casey required and was aproved for.
+The concept of least privilege is giving a user only the access needed for the approved task, scope, and duration-in other words, it provides only the access the user actually needs for the job, and nothing more. In this vein, I removed Casey's cloud account from the Privileged-Operators group (GC-PRIV), as that group's permissions were beyond what Casey required and was approved for.
 
 ### Why sign-in didn't settle authorization, and how ABAC adds conditions
 
