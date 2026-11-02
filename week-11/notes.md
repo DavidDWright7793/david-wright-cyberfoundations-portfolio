@@ -90,6 +90,6 @@ Audit log: Which operation changed what?
 ## 11. Useful Terms and Questions
 
 ```text
-Terms I want to review: n/a
+Terms I want to review: RBAC, ABAC, Azure Resource RBAC
 Questions for my instructor: n/a
 ```
