@@ -1360,7 +1360,7 @@ Additional numbered images are optional for smaller screens or larger text; do n
 
 ![week09-lab02-loopback-listener.png](https://raw.githubusercontent.com/DavidDWright7793/david-wright-cyberfoundations-portfolio/refs/heads/main/assets/screenshots/week-09/week09-lab02-loopback-listener.png)
 
-**Caption - loopback listener:**
+**Caption - loopback listener:** This screenshot confirms a listener being set up in Terminal B.
 
 ![week09-lab02-tls-pass.png](https://raw.githubusercontent.com/DavidDWright7793/david-wright-cyberfoundations-portfolio/refs/heads/main/assets/screenshots/week-09/week09-lab02-tls-pass.png)
 
