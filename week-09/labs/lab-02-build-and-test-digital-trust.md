@@ -1164,14 +1164,14 @@ Replacing a file (renewal) is not enough because the server must also be configu
 
 | Comparison | Public website from Lab 01 | Isolated lesson service |
 | --- | --- | --- |
-| Intended hostname / SAN | 	CN = example.com/Not Critical DNS Name: example.com DNS Name: *.example.com |   |
-| Issuer and chain roles | 	CN = Cloudflare TLS Issuing ECC CA 3 O = SSL Corporation C = US |   |
-| Validity interval | Not Before: 9/26/26, 6:49:11 PM EDT Not After: 12/25/26, 5:56:35 PM EST   |   |
-| Allowed purpose | 	Not Critical TLS WWW Server Authentication (OID.1.3.6.1.5.5.7.3.1) |   |
-| Who accepts the top issuing office, and how is that choice made? | SSL.com TLS Transit ECC CA R2 |   |
-| Where does the service run, and how did you connect? |   |   |
-| Evidence actually observed |   |   |
-| What does this evidence NOT tell you? |   |   |
+| Intended hostname / SAN | 	example.com/*.example.com | localhost — the expected hostname matched the service certificate during the passing verification test. |
+| Issuer and chain roles | 	Cloudflare TLS Issuing ECC CA 3 | The leaf certificate was issued by the CyberFoundations lesson CA. The lesson CA was explicitly trusted for verification using ca/lesson-ca.cert.pem. |
+| Validity interval | Not Before: 9/26/26, 6:49:11 PM EDT Not After: 12/25/26, 5:56:35 PM EST   | notBefore=Nov  6 07:47:48 2026 GMT notAfter=Nov  6 07:47:48 2027 GMT |
+| Allowed purpose | TLS WWW Server Authentication — authenticating a website/server during a TLS connection. | TLS server authentication (sslserver). The certificate successfully passed verification for this purpose. |
+| Who accepts the top issuing office, and how is that choice made? | The browser or operating system accepts a trusted root CA through its configured trust store. | The OpenSSL client accepted the lesson CA because ca/lesson-ca.cert.pem was supplied as the trusted CA file. |
+| Where does the service run, and how did you connect? | The public website example.com, accessed over HTTPS through a web browser. | The service ran locally on my assigned VM, listening at 127.0.0.1:8443. Terminal B connected to it using openssl s_client with TLS 1.3. |
+| Evidence actually observed | The certificate displayed a subject of CN = example.com, SAN entries for example.com and *.example.com, issuer information, validity dates, and the TLS server authentication purpose. | The listener appeared as LISTEN at 127.0.0.1:8443. The passing TLS test showed CONNECTION ESTABLISHED, TLSv1.3, Verification: OK, Verified peername: localhost, and exit status 0. The wrong-name test failed with a hostname mismatch and exit status 1. |
+| What does this evidence NOT tell you? | It does not prove the website has no vulnerabilities, that is content is reliable, or that the organization operating it is honest. | It does not prove that the service is publicly accessible, free of vulnerabilities, or trusted by ordinary web browsers. The lesson CA was explicitly trusted for this test, not necessarily trusted by other systems. |
 
 ## Continuing saved work — Returning to This Lab? Start Here
 
