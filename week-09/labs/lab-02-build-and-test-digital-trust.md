@@ -1310,7 +1310,7 @@ Before a new Submit to GitHub or resubmit attempt runs, the portal checks the te
 Write 5–7 sentences telling the story of what you did. Start with “First I made…”, then describe the badge application, the issuing office’s signature, your inspection, your file checks, and the live connection. Say which office you told the client to accept. Include one wrong-input test, why it failed, and what you kept the same.
 
 ```text
-(your walkthrough here)
+First, I created a fresh practice folder at `/home/analyst/cloud-heights/week9-digital-trust/practice-CRAujA`. Next, I generated the service's private key and a certificate signing request (CSR), which contained the corresponding public key and requested identity information. I then created the issuing certificate authority (CA) by generating a separate CA private key and a self-signed CA certificate. I established the certificate issuance rules by saving the seven required settings and used the CA to issue the service certificate. after that, I verified that the original public key, CSR public key, and issued certificate public key were identical by extracting and comparing them. I then performed a passing verification test using the intended CA, certificate purpose, expected hostname, and validity period, establishing a baseline for comparison with the negative tests. FInally, I purposely tested an incorrect hostname, which caused verification to fail because the expected hostname did not match the identity listed in the certificate, even though the leaf certificate and CA remained unchanged.
 ```
 
 ## Required Evidence
