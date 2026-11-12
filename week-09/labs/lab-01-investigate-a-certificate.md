@@ -138,7 +138,7 @@ Now do two badge checks yourself: “Right name?” and “Still within its date
 Expected hostname: https://example.com
 Matching SAN entry, or no match: DNS Name: example.com
 DNS Name: *.example.com
-Why the entry matches or does not match: The hostname matches with a SAN entry because the certificate is valid. If the hostname had no matching SAN entry, it would be valid.
+Why the entry matches or does not match: The hostname matches with a SAN entry because the certificate is valid. If the hostname had no matching SAN entry, it would not be valid.
 Observation time and certificate time zone: 10/1/2026, 4:26am, EST
 Is your observation time between the start and end dates? Explain: Yes, because the current observation time (10/1/2026, 4:26am EDT) falls between the start (9/26/26, 6:49:11 PM EDT) and end (12/25/26, 5:56:35 PM EST) .
 Browser-reported result: The certificate is valid.
@@ -258,7 +258,7 @@ The browser must check more than the printed issuer name becase anyone can print
 **Analysis Question 3.** What did your name, date, and browser checks tell you about this connection? Why do they not promise that everything the website says or offers is safe? Say which checks you did and which you did not do. Write at least 3 sentences.
 
 ```text
-My name, date, and browser checks tell me that the website's identity is validated according to the certificate's requirements and that I have established a secure TLS connection to the website. However, this does not guarantee that everything the website says or offers is safe or trustworthy. I checked the name, date, and browser.
+My name, date, and browser checks tell me that the website's identity is validated according to the certificate's requirements and that I have established a secure TLS connection to the website. However, this does not guarantee that everything the website says or offers is safe or trustworthy. I checked the name, date, and browser. I did not independently verify every signature, revocation status, website content, or overall site safety.
 ```
 
 ## Submission Checklist
