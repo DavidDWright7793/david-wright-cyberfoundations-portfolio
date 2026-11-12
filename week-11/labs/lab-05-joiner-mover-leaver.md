@@ -23,7 +23,7 @@ Escalate: not applicable
 
 Add: GC-AUD, GA-AUD,  OU-AUD
 Retain: GA-ALL
-Remove:  GA-RESP, GC-AUD
+Remove:  GA-RESP, GC-RESP
 Deny: not applicable
 Escalate: not applicable
 
