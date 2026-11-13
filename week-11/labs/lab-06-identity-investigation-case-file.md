@@ -29,7 +29,7 @@ In this environment, one person is associated with one identity, but that identi
 
 ### 3. Blair authentication-versus-authorization investigation
 
-The sign-in records show that Blair attemped to sign-in to the system but failed to authenticate due to entering the password incorrectly. Blair made another attempt authenticate, and did so successfully by entering the correct password. When Blair signed in successfully, that got them in the door to the system-it did not authorize access to any specific resource.
+The sign-in records show that Blair attemped to sign-in to the system but failed to authenticate due to entering the password incorrectly. Blair made another attempt to authenticate, and did so successfully by entering the correct password. When Blair signed in successfully, that action got them in the door to the system-it did not authorize access to any specific resource.
 
 ### 4. Directory administration and sensitive-action verification
 
@@ -68,7 +68,7 @@ My historical findings show that Casey Rivera's account made five unsuccessful a
 #### Finding 2: Blair Chen's Failed Sign-In Attempt
 
 - **Events:** S002, S003
-- **Observation:** The selected records show that Blair Chen's account made one unsuccessful sign-in attempt by entering an incorrect passsword, but the account's next authentication attemp was successful and the password was correctly entered.
+- **Observation:** The selected records show that Blair Chen's account made one unsuccessful sign-in attempt by entering an incorrect passsword, but the account's next authentication attempt was successful and the password was correctly entered.
 - **Hypothesis:** It is possible that Blair simply mistyped the account's password the first time and then typed it correctly the second time, resulting in successful authentication.
 - **Supported conclusion:** The selected evidence does not contain anything that looks suspicious, and Blair's sign-in attempts should be a low priority for investigation.
 - **Uncertainty / missing information:** These records do not tell us who signed into Blair's account, or whether they are legitimately authorized to access it.
