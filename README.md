@@ -1,1 +1,27 @@
-I am David D. Wright, and I am making a career transition into IT/cybersecurity after more than 17 years in hospitality and hotel operations. I am a member of the CyberVisionaries CyberFoundations cohort, which began on July 13, 2026 and will run for 12 weeks. I have earned IT and cybersecurity certifications such as CompTIA Tech+ and A+, ISC2's Certified in Cybersecurity, and the Google and IBM IT Support Certificates on Coursera. I will begin earning an online Bachelor of Science in Cybersecurity and Information Assurance from Western Governors University in September 2026, which is bundled with several IT/cybersecurity certifications including CompTIA Network+, Security+, CySA+, and Pentest+. My initial goal is to obtain an entry-level position in IT support or help desk, with the ultimate trajectory of developing a career in GRC or data privacy (combining cybersecurity with legal and business acumen). This repository is my portfolio for the cohort where I will showcase my work, what I am building, and what I am learning.
+# Week 12 — Communications Capstone
+
+**Portfolio Deliverable 5 — Technical Incident Report + Executive Communication**
+
+> Fictional training scenario: Cloud Heights Identity Center (simulated). No real organisation, people or systems.
+
+- Analyst: David Wright
+- Executive communication format: **Written Executive Summary**
+- Source: my Week 11 Lab 06 IAM Investigation Case File — [../week-11/labs/lab-06-identity-investigation-case-file.md](../week-11/labs/lab-06-identity-investigation-case-file.md)
+- Status: Final QA complete
+
+## Files
+- [technical-incident-report.md](technical-incident-report.md) — the technical report, findings, recommendations and limitations
+- [executive-summary.md](executive-summary.md) — written summary for leadership
+- [source/week11-source-manifest.json](source/week11-source-manifest.json) — which Week 11 source this was built from
+
+## Final QA
+- [x] Week 11 Case File (Lab 3) is complete
+- [x] Your name is on the report
+- [x] Report sections present
+- [x] At least two evidence-linked findings
+- [x] High-certainty wording reviewed
+- [x] Limitations / unknowns stated
+- [x] At least one actionable recommendation
+- [x] Written Executive Summary complete
+
+Week 12 transforms the Week 11 investigation into professional communication. It does not re-investigate or add new incident facts. Evidence stays in `week-11/` and is referenced, not copied.
